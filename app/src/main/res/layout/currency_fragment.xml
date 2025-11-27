@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/currencyFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency Converter"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0066CC"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/editTxtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount (GBP)"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/topImg"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="Top Currency Flag"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/currCodeText_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="GBP"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:id="@+id/bottomImg"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="Bottom Currency Flag"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/currCodeText_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="EUR"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/resultTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#0066CC"
+            android:minHeight="40dp"
+            android:layout_marginBottom="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/btnConvert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convert"
+                android:backgroundTint="#0066CC"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/btnSwap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swap"
+                android:backgroundTint="#0066CC"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:backgroundTint="#D32F2F"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

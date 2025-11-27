@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <SearchView
+        android:id="@+id/currencySearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="10dp"
+        android:queryHint="Currency Search"
+        android:background="@drawable/search_border" />
+
+    <ListView
+        android:id="@+id/currencyList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:dividerHeight="1dp"
+        android:divider="#EEEEEE"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/manualRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:backgroundTint="#0066CC"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="20dp" />
+
+        <Button
+            android:id="@+id/mainCurrBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display Main Currencies"
+            android:backgroundTint="#0066CC"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtPubDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Last refreshed: ..."
+        android:textSize="12sp"
+        android:textColor="#888888" />
+
+</LinearLayout>
